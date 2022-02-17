@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="dpram2048x8_synth_1" LaunchDir="F:/xilinx_project/AX7020/2017_NewCourse/course_s1_fpga/18_an108_adda_hdmi_test/an108_adda_lcd.runs/dpram2048x8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

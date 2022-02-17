@@ -1,0 +1,97 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Sun Jan 30 20:26:37 2022
+| Host         : SUGARPIE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    75 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     4 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             110 |           44 |
+| No           | No                    | Yes                    |              69 |           21 |
+| No           | Yes                   | No                     |              65 |           23 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             123 |           33 |
+| Yes          | Yes                   | No                     |              14 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+-----------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
+|         Clock Signal        |                    Enable Signal                    |                           Set/Reset Signal                          | Slice Load Count | Bel Load Count |
++-----------------------------+-----------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
+|  sys_clk_IBUF_BUFG          |                                                     |                                                                     |                1 |              1 |
+|  sys_clk_IBUF_BUFG          |                                                     | an108_adc_m0/AR[0]                                                  |                3 |              3 |
+|  video_pll_m0/inst/clk_out1 |                                                     | osd_display_m0/clear                                                |                1 |              3 |
+|  adda_pll_m0/inst/clk_out2  |                                                     |                                                                     |                2 |              9 |
+|  video_pll_m0/inst/clk_out1 |                                                     | draw_grid_m0/timing_gen_xy_m0/SR[0]                                 |                3 |              9 |
+|  video_pll_m0/inst/clk_out1 |                                                     | rgb2dvi_m0/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0 |                4 |             10 |
+|  adda_pll_m0/inst/clk_out1  |                                                     | an108_adc_m0/AR[0]                                                  |                3 |             11 |
+|  adda_pll_m0/inst/clk_out1  | an108_adc_m0/wea[0]                                 | an108_adc_m0/AR[0]                                                  |                5 |             11 |
+|  video_pll_m0/inst/clk_out1 |                                                     | draw_wav_m0/timing_gen_xy_m0/SR[0]                                  |                3 |             11 |
+|  video_pll_m0/inst/clk_out1 | osd_display_m0/timing_gen_xy_m0/y_cnt[0]_i_1__1_n_0 | an108_adc_m0/AR[0]                                                  |                3 |             12 |
+|  video_pll_m0/inst/clk_out1 | draw_bg_m0/v_cnt_1                                  | an108_adc_m0/AR[0]                                                  |                5 |             12 |
+|  video_pll_m0/inst/clk_out1 | draw_grid_m0/timing_gen_xy_m0/y_cnt[0]_i_1_n_0      | an108_adc_m0/AR[0]                                                  |                3 |             12 |
+|  video_pll_m0/inst/clk_out1 | draw_wav_m0/timing_gen_xy_m0/y_cnt[0]_i_1__0_n_0    | an108_adc_m0/AR[0]                                                  |                3 |             12 |
+|  video_pll_m0/inst/clk_out1 | osd_display_m0/region_active                        | osd_display_m0/osd_ram_addr0                                        |                4 |             14 |
+|  sys_clk_IBUF_BUFG          | pl_key2_m0/q_reg[31]_i_1_n_0                        | an108_adc_m0/AR[0]                                                  |                7 |             32 |
+|  adda_pll_m0/inst/clk_out1  | an108_adc_m0/wait_cnt_0                             | an108_adc_m0/AR[0]                                                  |                7 |             32 |
+|  video_pll_m0/inst/clk_out1 |                                                     | rgb2dvi_m0/U0/DataEncoders[0].DataEncoder/SR[0]                     |               12 |             32 |
+|  video_pll_m0/inst/clk_out1 |                                                     | an108_adc_m0/AR[0]                                                  |               15 |             55 |
+|  video_pll_m0/inst/clk_out1 |                                                     |                                                                     |               41 |            105 |
++-----------------------------+-----------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,2 @@
+da_rom_triangle.v,verilog,xil_defaultlib,../../../../../zynq/led_ip/da_rom_triangle/sim/da_rom_triangle.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

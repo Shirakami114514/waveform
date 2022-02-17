@@ -1,0 +1,2 @@
+osd_rom.v,verilog,xil_defaultlib,../../../../an108_wave.srcs/osd_rom/ip/osd_rom/sim/osd_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

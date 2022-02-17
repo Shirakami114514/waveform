@@ -1,0 +1,2 @@
+osd_rom.v,verilog,xil_defaultlib,../../../../../zynq/led_ip/osd_rom_1/sim/osd_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

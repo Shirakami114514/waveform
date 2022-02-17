@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Sat Jan 29 21:29:49 2022
+# Process ID: 17180
+# Current directory: C:/Users/SUGARPIE/Desktop/waveform
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16304 C:\Users\SUGARPIE\Desktop\waveform\an108_wave.xpr
+# Log file: C:/Users/SUGARPIE/Desktop/waveform/vivado.log
+# Journal file: C:/Users/SUGARPIE/Desktop/waveform\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SUGARPIE/Desktop/waveform/an108_wave.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Users/SUGARPIE/Desktop/schematic.pdf

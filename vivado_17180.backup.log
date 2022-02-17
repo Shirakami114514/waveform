@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Sat Jan 29 21:29:49 2022
+# Process ID: 17180
+# Current directory: C:/Users/SUGARPIE/Desktop/waveform
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16304 C:\Users\SUGARPIE\Desktop\waveform\an108_wave.xpr
+# Log file: C:/Users/SUGARPIE/Desktop/waveform/vivado.log
+# Journal file: C:/Users/SUGARPIE/Desktop/waveform\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SUGARPIE/Desktop/waveform/an108_wave.xpr
+INFO: [Project 1-313] Project file moved from 'E:/waveform' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/SUGARPIE/Desktop/waveform/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 981.223 ; gain = 285.500
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: top
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1506.250 ; gain = 116.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/wav_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ax_debounce' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/ax_debounce.v:2]
+	Parameter N bound to: 32 - type: integer 
+	Parameter FREQ bound to: 50 - type: integer 
+	Parameter MAX_TIME bound to: 20 - type: integer 
+	Parameter TIMER_MAX_VAL bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ax_debounce' (1#1) [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/ax_debounce.v:2]
+INFO: [Synth 8-6157] synthesizing module 'video_pll' [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_pll' (2#1) [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/video_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'adda_pll' [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adda_pll' (3#1) [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/adda_pll_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'da_rom' [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/da_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'da_rom' (4#1) [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/da_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'draw_bg' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/draw_bg.v:2]
+	Parameter H_ACTIVE bound to: 16'b0000011110000000 
+	Parameter H_FP bound to: 16'b0000000001011000 
+	Parameter H_SYNC bound to: 16'b0000000000101100 
+	Parameter H_BP bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE bound to: 16'b0000010000111000 
+	Parameter V_FP bound to: 16'b0000000000000100 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000100100 
+	Parameter HS_POL bound to: 1'b1 
+	Parameter VS_POL bound to: 1'b1 
+	Parameter H_TOTAL bound to: 16'b0000100010011000 
+	Parameter V_TOTAL bound to: 16'b0000010001100101 
+	Parameter WHITE_R bound to: 8'b11111111 
+	Parameter WHITE_G bound to: 8'b11111111 
+	Parameter WHITE_B bound to: 8'b11111111 
+	Parameter YELLOW_R bound to: 8'b11111111 
+	Parameter YELLOW_G bound to: 8'b11111111 
+	Parameter YELLOW_B bound to: 8'b00000000 
+	Parameter CYAN_R bound to: 8'b00000000 
+	Parameter CYAN_G bound to: 8'b11111111 
+	Parameter CYAN_B bound to: 8'b11111111 
+	Parameter GREEN_R bound to: 8'b00000000 
+	Parameter GREEN_G bound to: 8'b11111111 
+	Parameter GREEN_B bound to: 8'b00000000 
+	Parameter MAGENTA_R bound to: 8'b11111111 
+	Parameter MAGENTA_G bound to: 8'b00000000 
+	Parameter MAGENTA_B bound to: 8'b11111111 
+	Parameter RED_R bound to: 8'b11111111 
+	Parameter RED_G bound to: 8'b00000000 
+	Parameter RED_B bound to: 8'b00000000 
+	Parameter BLUE_R bound to: 8'b00000000 
+	Parameter BLUE_G bound to: 8'b00000000 
+	Parameter BLUE_B bound to: 8'b11111111 
+	Parameter BLACK_R bound to: 8'b00000000 
+	Parameter BLACK_G bound to: 8'b00000000 
+	Parameter BLACK_B bound to: 8'b00000000 
+WARNING: [Synth 8-6014] Unused sequential element active_x_reg was removed.  [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/draw_bg.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'draw_bg' (5#1) [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/draw_bg.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (6#1) [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'draw_grid' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/draw_grid.v:1]
+INFO: [Synth 8-6157] synthesizing module 'timing_gen_xy' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'timing_gen_xy' (7#1) [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/timing_gen_xy.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'draw_grid' (8#1) [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/draw_grid.v:1]
+INFO: [Synth 8-6157] synthesizing module 'an108_adc' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/an108_adc.v:1]
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_SAMPLE bound to: 1 - type: integer 
+	Parameter S_WAIT bound to: 2 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element adc_data_d1_reg was removed.  [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/an108_adc.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'an108_adc' (9#1) [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/an108_adc.v:1]
+WARNING: [Synth 8-689] width (11) of port connection 'adc_buf_addr' does not match port width (12) of module 'an108_adc' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/wav_top.v:217]
+INFO: [Synth 8-6157] synthesizing module 'draw_wav' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/draw_wav.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dpram2048x8' [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpram2048x8' (10#1) [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/dpram2048x8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'draw_wav' (11#1) [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/draw_wav.v:1]
+INFO: [Synth 8-6157] synthesizing module 'osd_display' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/imports/14_hdmi_char/hdmi_char.srcs/sources_1/src/osd_display.v:1]
+	Parameter OSD_WIDTH bound to: 12'b000010010000 
+	Parameter OSD_HEGIHT bound to: 12'b000000100000 
+INFO: [Synth 8-6157] synthesizing module 'osd_rom' [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/osd_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'osd_rom' (12#1) [C:/Users/SUGARPIE/Desktop/waveform/.Xil/Vivado-17180-SUGARPIE/realtime/osd_rom_stub.v:6]
+WARNING: [Synth 8-689] width (13) of port connection 'addra' does not match port width (11) of module 'osd_rom' [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/imports/14_hdmi_char/hdmi_char.srcs/sources_1/src/osd_display.v:95]
+WARNING: [Synth 8-6014] Unused sequential element region_active_d1_reg was removed.  [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/imports/14_hdmi_char/hdmi_char.srcs/sources_1/src/osd_display.v:53]
+WARNING: [Synth 8-6014] Unused sequential element region_active_d2_reg was removed.  [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/imports/14_hdmi_char/hdmi_char.srcs/sources_1/src/osd_display.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'osd_display' (13#1) [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/imports/14_hdmi_char/hdmi_char.srcs/sources_1/src/osd_display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (14#1) [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/src/wav_top.v:1]
+WARNING: [Synth 8-3331] design draw_wav has unconnected port adc_buf_addr[11]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1560.141 ; gain = 170.766
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1560.141 ; gain = 170.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1560.141 ; gain = 170.766
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/video_pll/video_pll.dcp' for cell 'video_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/adda_pll/adda_pll.dcp' for cell 'adda_pll_m0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/da_rom/da_rom.dcp' for cell 'da_rom_m0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.dcp' for cell 'rgb2dvi_m0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/dpram2048x8/dpram2048x8.dcp' for cell 'draw_wav_m0/buffer'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/osd_rom/ip/osd_rom/osd_rom.dcp' for cell 'osd_display_m0/osd_rom_m0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1560.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 11 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/video_pll/video_pll_board.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/video_pll/video_pll.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/adda_pll/adda_pll_board.xdc] for cell 'adda_pll_m0/inst'
+Finished Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/adda_pll/adda_pll_board.xdc] for cell 'adda_pll_m0/inst'
+Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/adda_pll/adda_pll.xdc] for cell 'adda_pll_m0/inst'
+Finished Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/adda_pll/adda_pll.xdc] for cell 'adda_pll_m0/inst'
+Parsing XDC File [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/constrs_1/new/an108_hdmi.xdc]
+Finished Parsing XDC File [C:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/constrs_1/new/an108_hdmi.xdc]
+Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Finished Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'rgb2dvi_m0/U0'
+Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/video_pll/video_pll_late.xdc] for cell 'video_pll_m0/inst'
+Finished Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/video_pll/video_pll_late.xdc] for cell 'video_pll_m0/inst'
+Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/adda_pll/adda_pll_late.xdc] for cell 'adda_pll_m0/inst'
+Finished Parsing XDC File [c:/Users/SUGARPIE/Desktop/waveform/an108_wave.srcs/sources_1/ip/adda_pll/adda_pll_late.xdc] for cell 'adda_pll_m0/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1690.051 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 1774.914 ; gain = 385.539
+43 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 1774.914 ; gain = 666.938
+write_schematic -format pdf -orientation portrait C:/Users/SUGARPIE/Desktop/schematic.pdf
+C:/Users/SUGARPIE/Desktop/schematic.pdf
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 29 22:42:39 2022...

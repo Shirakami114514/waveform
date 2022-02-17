@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+# IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+# Start of session at: Wed Feb 16 22:12:53 2022
+# Process ID: 19260
+# Current directory: C:/Users/SUGARPIE/Desktop/waveform
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2864 C:\Users\SUGARPIE\Desktop\waveform\an108_wave.xpr
+# Log file: C:/Users/SUGARPIE/Desktop/waveform/vivado.log
+# Journal file: C:/Users/SUGARPIE/Desktop/waveform\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/SUGARPIE/Desktop/waveform/an108_wave.xpr
+update_compile_order -fileset sources_1
